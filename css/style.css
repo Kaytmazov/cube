@@ -10,6 +10,19 @@ body {
   text-transform: uppercase;
 }
 
+.form-control {
+  font-size: 18px;
+  box-shadow: none;
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+form .btn {
+  margin-top: 10px;
+}
+
 .icon {
   display: inline-block;
   background: url(../img/sprites.png) no-repeat;
@@ -57,11 +70,7 @@ img {
   height: auto;
 }
 
-.main-section {
-  padding-top: 60px;
-  text-align: center;
-}
-
+h1.page-title, 
 h2.section-title {
   font-size: 60px;
   font-weight: 400;
@@ -70,6 +79,11 @@ h2.section-title {
 
 h3.section-title {
   font-size: 48px;
+}
+
+.main-section {
+  padding-top: 60px;
+  text-align: center;
 }
 
 .main-section h3 {
@@ -86,6 +100,31 @@ h3.section-title {
 
 .main-section .btn {
   margin-bottom: 30px;
+}
+
+.page-banner {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  min-height: 580px;
+  padding: 30px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #65b38c;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.banner-desc {
+  margin-bottom: 50px;
+  padding: 0 20%;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /* ============ Header ============ */
@@ -315,15 +354,15 @@ h3.section-title {
 }
 
 .social-in:hover {
-  color: #008cc9
+  color: #008cc9;
 }
 
 .social-fb:hover {
-  color: #3b5998
+  color: #4267b2;
 }
 
 .social-tw:hover {
-  color: #1da1f2
+  color: #1da1f2;
 }
 
 /* ============ Footer-nav ============ */
@@ -364,16 +403,12 @@ h3.section-title {
 }
 
 /*==================================================
-=            Страница SDK
+=                 Страница CUBE SDK
 ==================================================*/
 
 /* ============ SDK Banner ============ */
 .sdk-banner {
-  padding: 90px 0;
-  color: #fff;
-  background: #65b38c url(../img/sdk/sdkpage-bg.jpg) no-repeat center;
-  -webkit-background-size: cover;
-  background-size: cover;
+  background-image: url(../img/sdk/sdk-banner-bg.jpg);
 }
 
 .sdk-icons {
@@ -387,6 +422,10 @@ h3.section-title {
 }
 
 /* ============ SDK Banner ============ */
+.sdk-monetize {
+  padding-bottom: 30px;
+}
+
 .sdk-monetize .features-title {
   text-transform: none;
 }
@@ -497,13 +536,101 @@ h3.section-title {
 }
 
 /*==================================================
-=            Страница SDK
+=               Страница CUBE Network
 ==================================================*/
 
-/* ============ SDK Banner ============ */
+/* ============ Network Banner ============ */
+.network-banner {
+  background-image: url(../img/network/network-banner-bg.jpg);
+}
 
+.network-banner .banner-desc {
+  text-transform: uppercase;
+}
 
+/* ============ network-marketing ============ */
+.network-marketing {
+  padding-bottom: 40px;
+}
 
+.network-marketing .section-title {
+  letter-spacing: -1px;
+}
+
+.network-marketing .section-desc {
+  font-size: 30px;
+  color: #484848;
+  line-height: 1.4;
+}
+
+.network-marketing .features-item:nth-child(3) {
+  clear: both;
+}
+
+.network-marketing .features-photo {
+  min-height: 120px;
+}
+
+.network-marketing .btn {
+  margin-top: 40px;
+}
+
+/* ============ network-location ============ */
+.network-location {
+  background-color: #edf5f7;
+}
+
+.network-location .section-title {
+  padding: 0 15%;
+}
+
+.network-location .section-desc {
+  font-size: 24px;
+  color: #484848;
+}
+
+.network-location .features-title {
+  min-height: 80px;
+  padding: 0 15%;
+  text-transform: none;
+}
+
+.network-location .features-desc {
+  min-height: 300px;
+}
+
+.network-location .features-photo {
+  margin-bottom: 0;
+}
+
+/* ============ content-makers ============ */
+.content-makers {
+  padding-bottom: 100px;
+  background-color: #edf5f7;
+}
+
+.content-makers h3 {
+  margin-bottom: 50px;
+}
+
+/* ============ network-form ============ */
+.network-form {
+  color: #fff;
+  background: #5ca1ac; /* Для старых браузеров */
+  background: linear-gradient(to right, #688dc7, #5da0ae, #6ab588, #99c55c, #b8d253);
+}
+
+.network-form .section-title {
+  color: #fff;
+}
+
+.network-form .section-desc {
+  font-size: 24px;
+}
+
+.network-form form {
+  margin-top: 30px;
+}
 
 
 
@@ -521,6 +648,7 @@ h3.section-title {
 
   h4 { font-size: 20px; }
 
+  h1.page-title, 
   h2.section-title { font-size: 50px; }
 
   h3.section-title { font-size: 40px; }
@@ -542,6 +670,12 @@ h3.section-title {
 
   .sdk-video .section-desc { font-size: 30px; }
 
+  .network-marketing .section-desc { font-size: 22px; }
+
+  .network-location .features-title { min-height: 70px; }
+
+  .network-location .features-desc { min-height: 220px; }
+
 }
 
 /* Medium Devices, Desktops */
@@ -551,9 +685,16 @@ h3.section-title {
 
   h3 { font-size: 20px; }
 
+  h1.page-title, 
   h2.section-title { font-size: 40px; }
 
   h3.section-title { font-size: 30px; }
+
+  .form-control { font-size: 16px; }
+
+  .page-banner { min-height: 450px; }
+
+  .banner-desc { margin-bottom: 30px; }
 
   .btn { font-size: 16px; }
 
@@ -603,8 +744,6 @@ h3.section-title {
 
   .footer-bottom { padding: 20px 0; }
 
-  .sdk-banner { padding: 40px 0; }
-
   .sdk-video .section-desc { font-size: 22px; }
 
   .sdk-video iframe { height: 400px; }
@@ -618,6 +757,11 @@ h3.section-title {
 
   .slider-author { margin-bottom: 30px; }
 
+  .network-location .section-desc, 
+  .network-form .section-desc { font-size: 20px; }
+
+  .network-location .features-title { padding: 0; }
+
 }
 
 /* Small Devices, Tablets */
@@ -627,14 +771,21 @@ h3.section-title {
 
   h5 { font-size: 16px; }
 
+  h1.page-title, 
   h2.section-title { font-size: 36px; }
 
   h3.section-title { font-size: 20px; }
 
   .btn {
-    padding: 12px 30px;
+    padding: 12px 20px;
     font-size: 14px;
   }
+
+  .form-control { font-size: 14px; }
+
+  .page-banner { min-height: 400px; }
+
+  .banner-desc { padding: 0; }
 
   .main-banner { padding-bottom: 10px; }
 
@@ -668,9 +819,9 @@ h3.section-title {
 
   .footer-bottom .social-btns { text-align: center; }
 
-  .sdk-banner { padding: 20px 0; }
+  .sdk-monetize { padding-bottom: 10px; }
 
-  .sdk-icons { margin-top: 0; }
+  .sdk-icons { margin-top: 20px; }
 
   .sdk-video { padding-bottom: 10px; }
 
@@ -697,6 +848,23 @@ h3.section-title {
 
   .slider-author { margin-bottom: 20px; }
 
+  .network-marketing .section-desc, 
+  .network-location .section-desc, 
+  .network-form .section-desc { font-size: 14px; }
+
+  .network-marketing .btn { margin: 10px 0; }
+
+  .network-location .section-title { padding: 0; }
+
+  .network-location .features-title, 
+  .network-location .features-desc { min-height: 0; }
+
+  .network-location .section-desc { line-height: 1.2; }
+
+  .network-location .features { margin-top: 20px; }
+
+  .content-makers { padding-bottom: 50px; }
+
 }
 
 /* Extra Small Devices, Phones */ 
@@ -709,6 +877,7 @@ h3.section-title {
 
   h4 { font-size: 18px; }
 
+  h1.page-title, 
   h2.section-title {
     margin-top: 10px;
     font-size: 30px;
