@@ -613,25 +613,88 @@ h3.section-title {
   margin-bottom: 50px;
 }
 
-/* ============ network-form ============ */
-.network-form {
+/* ============ cube-form ============ */
+.cube-form {
   color: #fff;
   background: #5ca1ac; /* Для старых браузеров */
   background: linear-gradient(to right, #688dc7, #5da0ae, #6ab588, #99c55c, #b8d253);
 }
 
-.network-form .section-title {
+.cube-form .section-title {
   color: #fff;
 }
 
-.network-form .section-desc {
+.cube-form .section-desc {
   font-size: 24px;
 }
 
-.network-form form {
+.cube-form form {
   margin-top: 30px;
 }
 
+/*==================================================
+=               Страница CUBE Mode
+==================================================*/
+
+/* ============ Mode Banner ============ */
+.mode-banner {
+  position: relative;
+  flex-direction: column;
+  padding: 30px 15px;
+  background-image: url(../img/mode/mode-banner-bg.jpg);
+}
+
+.mode-banner .banner-desc {
+  padding: 0;
+}
+
+.mode-banner img {
+  position: absolute;
+  bottom: 0;
+}
+
+/* ============ mode-partners ============ */
+.mode-partners img {
+  margin: 40px 0;
+}
+
+.mode-partners .btn {
+  margin: 20px 0 60px;
+}
+
+/* ============ kidoz-features ============ */
+.kidoz-features {
+  background-color: #edf5f7;
+}
+
+/* ============ downloa-kidoz ============ */
+.download-kidoz {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+  padding: 30px 0;
+  text-align: center;
+  color: #fff;
+  background: #65b38c url(../img/mode/download-bg.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  border-bottom: 4px solid #edf5f7;
+}
+
+.download-kidoz .section-title {
+  margin-bottom: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.download-btn {
+  margin-bottom: 30px;
+}
 
 
 /*==================================================
@@ -758,9 +821,18 @@ h3.section-title {
   .slider-author { margin-bottom: 30px; }
 
   .network-location .section-desc, 
-  .network-form .section-desc { font-size: 20px; }
+  .cube-form .section-desc { font-size: 20px; }
 
   .network-location .features-title { padding: 0; }
+
+  .cube-form form { margin-top: 0; }
+
+  .mode-banner img {
+    max-height: 240px;
+    width: auto;
+  }
+
+  .download-kidoz { min-height: 370px; }
 
 }
 
@@ -850,7 +922,7 @@ h3.section-title {
 
   .network-marketing .section-desc, 
   .network-location .section-desc, 
-  .network-form .section-desc { font-size: 14px; }
+  .cube-form .section-desc { font-size: 14px; }
 
   .network-marketing .btn { margin: 10px 0; }
 
@@ -864,6 +936,16 @@ h3.section-title {
   .network-location .features { margin-top: 20px; }
 
   .content-makers { padding-bottom: 50px; }
+
+  .mode-banner img { max-height: 200px; }
+
+  .mode-partners img { margin: 15px 0; }
+
+  .mode-partners .btn { margin-bottom: 30px; }
+
+  .download-kidoz { min-height: 350px; }
+
+  .download-kidoz .section-title { margin-bottom: 30px; }
 
 }
 
@@ -913,6 +995,8 @@ h3.section-title {
   .contacts-section { padding: 20px 0; }
 
   .contacts-section .btn-success { margin-right: 0; }
+
+  .kidoz-features .features-photo { margin-bottom: 10px; }
 
 }
 
