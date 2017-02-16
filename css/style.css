@@ -127,6 +127,77 @@ h3.section-title {
   line-height: 1.5;
 }
 
+/* ============ cube-slider ============ */
+.cube-slider {
+  padding-bottom: 60px;
+  background-color: #edf5f7;
+}
+
+.slider-text {
+  margin: 50px 0;
+  font-size: 24px;
+  color: #484848;
+}
+
+.slider-author {
+  margin-bottom: 50px;
+}
+
+.slick-loading .slick-list {
+  background: #fff url('../libs/slick/ajax-loader.gif') center center no-repeat;
+}
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  background: transparent;
+  border: 1px solid #688dc6;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  background: #688dc6;
+  outline: none;
+}
+
+.slick-dots li.slick-active button {
+  background: #688dc6;
+}
+
 /* ============ Header ============ */
 .main-header {
   position: relative;
@@ -464,77 +535,6 @@ h3.section-title {
   vertical-align: top;
 }
 
-/* ============ sdk-slider ============ */
-.sdk-slider {
-  padding-bottom: 60px;
-  background-color: #edf5f7;
-}
-
-.slider-text {
-  margin: 50px 0;
-  font-size: 24px;
-  color: #484848;
-}
-
-.slider-author {
-  margin-bottom: 50px;
-}
-
-.slick-loading .slick-list {
-  background: #fff url('../libs/slick/ajax-loader.gif') center center no-repeat;
-}
-
-/* Dots */
-.slick-dotted.slick-slider {
-  margin-bottom: 30px;
-}
-
-.slick-dots {
-  position: absolute;
-  bottom: -25px;
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
-
-.slick-dots li {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  padding: 0;
-  cursor: pointer;
-}
-
-.slick-dots li button {
-  display: block;
-  width: 15px;
-  height: 15px;
-  padding: 0;
-  font-size: 0;
-  line-height: 0;
-  color: transparent;
-  background: transparent;
-  border: 1px solid #688dc6;
-  border-radius: 50%;
-  outline: none;
-  cursor: pointer;
-}
-
-.slick-dots li button:hover,
-.slick-dots li button:focus {
-  background: #688dc6;
-  outline: none;
-}
-
-.slick-dots li.slick-active button {
-  background: #688dc6;
-}
-
 /*==================================================
 =               Страница CUBE Network
 ==================================================*/
@@ -692,9 +692,74 @@ h3.section-title {
   color: #fff;
 }
 
-.download-btn {
+.download-btn-wp {
   margin-bottom: 30px;
 }
+
+.btn-download {
+  display: inline-block;
+  transition-duration: 0.3s;
+}
+
+.btn-download:hover {
+  transform: scale(1.05);
+}
+
+/*==================================================
+=               Страница CUBE Parents
+==================================================*/
+
+/* ============ Parents Banner ============ */
+.parents-banner {
+  background-image: url(../img/parents/parents-banner-bg.jpg);
+}
+
+.parents-banner a {
+  margin: 10px;
+}
+
+/* ============ parents-advantages ============ */
+.parents-advantages ul {
+  margin-top: 35px;
+  padding-left: 20px;
+  text-align: left;
+  color: #484848;
+}
+
+.parents-advantages ul li {
+  margin-bottom: 15px;
+}
+
+.parents-advantages img {
+  margin-top: 50px;
+}
+
+/* ============ parents-slider ============ */
+.parents-slider {
+  color: #fff;
+  background: #5ca1ac; /* Для старых браузеров */
+  background: linear-gradient(to right, #688dc7, #5da0ae, #6ab588, #99c55c, #b8d253);
+}
+
+.parents-slider .slider-text {
+  color: #fff;
+}
+
+.parents-slider .slick-dots li button {
+  border-color: #fff;
+}
+
+.parents-slider  .slick-dots li button:hover, 
+.parents-slider  .slick-dots li button:focus, 
+.parents-slider .slick-dots li.slick-active button {
+  background: #fff;
+}
+
+.parents-slider .icon-msg {
+  background-position: -147px -82px;
+}
+
+
 
 
 /*==================================================
@@ -811,7 +876,7 @@ h3.section-title {
 
   .sdk-video iframe { height: 400px; }
 
-  .sdk-slider { padding-bottom: 30px; }
+  .cube-slider { padding-bottom: 30px; }
 
   .slider-text {
     margin: 30px 0;
@@ -911,7 +976,7 @@ h3.section-title {
     padding: 15px;
   }
 
-  .sdk-slider { padding: 25px 0; }
+  .cube-slider { padding: 25px 0; }
 
   .slider-text {
     margin: 20px 0;
