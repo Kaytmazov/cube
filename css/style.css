@@ -792,6 +792,65 @@ h3.section-title {
 }
 
 /*==================================================
+=               Страница Dashboard
+==================================================*/
+.signin-wrapper {
+  width: 700px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.signin-wrapper a {
+  color: #fff;
+}
+
+.auth-btns {
+  margin: 30px 0;
+}
+
+.auth-btns .btn-primary {
+  padding: 15px 35px 15px 80px;
+  font-size: 18px;
+  background-image: url(../img/sprites.png);
+}
+
+.auth-btns .auth-g {
+  float: left;
+  background-position: 22px -192px;
+}
+
+.auth-btns .auth-fb {
+  float: right;
+  background-position: 22px -259px;
+}
+
+.separator {
+  position: relative;
+  margin-bottom: 40px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  position: absolute;
+  top: 55%;
+  display: block;
+  width: 46%;
+  border-bottom: 1px solid #fff;
+}
+
+.separator::after {
+  right: 0;
+}
+
+.signin-wrapper .btn-block {
+  margin: 20px 0;
+}
+
+
+/*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
 
@@ -1048,6 +1107,18 @@ h3.section-title {
 
   .blog-item .item-bottom { padding: 10px; }
 
+  .signin-wrapper {
+    width: auto;
+    padding: 30px 0;
+  }
+
+  .auth-btns .btn-primary {
+    float: none;
+    margin-top: 20px;
+  }
+
+  .separator { font-size: 22px; }
+
 }
 
 /* Extra Small Devices, Phones */ 
@@ -1098,6 +1169,19 @@ h3.section-title {
   .contacts-section .btn-success { margin-right: 0; }
 
   .kidoz-features .features-photo { margin-bottom: 10px; }
+
+  .auth-btns { margin: 15px 0; }
+
+  .auth-btns .btn-primary {
+    padding: 12px 20px;
+    font-size: 14px;
+    background-image: none;
+  }
+
+  .separator {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
 
 }
 
