@@ -131,7 +131,7 @@ h3.section-title {
 }
 
 .page-desc {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 22px;
 }
 
@@ -159,7 +159,6 @@ h3.section-title {
 .page-text p {
   margin-bottom: 30px;
 }
-
 
 /* ============ cube-slider ============ */
 .cube-slider {
@@ -959,8 +958,7 @@ h3.section-title {
   padding-bottom: 50px;
 }
 
-.partners-content {
-  padding-bottom: 50px;
+.partners-content strong {
   color: #484848;
 }
 
@@ -988,8 +986,87 @@ h3.section-title {
   margin-bottom: 90px;
 }
 
+/*==================================================
+=               Страница Jobs
+==================================================*/
+.jobs-list-title {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #484848;
+}
 
+.panel {
+  border-width: 2px;
+}
 
+.panel-group .panel+.panel {
+  margin-top: 15px;
+}
+
+.panel-default>.panel-heading {
+  color: #688dc6;
+  transition: background 0.3s;
+}
+
+.panel-default>.panel-heading:hover, 
+.panel.active .panel-heading {
+  color: #fff;
+  background-color: #688dc6;
+}
+
+.panel-title {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.panel-title a {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+  text-decoration: none;
+}
+
+.panel-title a::before {
+  content: "\f067";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-top: -13px;
+  padding: 3px;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-align: center;
+  border: 3px solid #688dc6;
+  border-radius: 50%;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.panel-default>.panel-heading:hover a::before {
+  border-color: #fff;
+}
+
+.panel.active .panel-title a::before {
+  content: "\f068";
+  border-color: #fff;
+}
+
+.panel-body {
+  background-color: #fff;
+}
+
+.panel-body h4 {
+  color: #484848;
+  text-transform: uppercase;
+}
+
+.panel-body img {
+  margin: 30px auto;
+}
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
@@ -1163,6 +1240,8 @@ h3.section-title {
 
   .news .item-title { font-size: 18px; }
 
+  .panel-title { font-size: 20px; }
+
 }
 
 /* Small Devices, Tablets */
@@ -1313,6 +1392,15 @@ h3.section-title {
 
   .news .item-title { font-size: 16px; }
 
+  .jobs-list-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .panel-title { font-size: 18px; }
+
+  .panel-body { padding: 20px 30px; }
+
 }
 
 /* Extra Small Devices, Phones */ 
@@ -1382,6 +1470,12 @@ h3.section-title {
   .person-item { margin-bottom: 20px; }
 
   .news { margin-top: 0; }
+
+  .jobs-list-title { font-size: 14px; }
+
+  .panel-title { font-size: 16px; }
+
+  .panel-body { padding: 10px 15px; }
 
 }
 
