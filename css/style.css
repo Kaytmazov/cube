@@ -897,6 +897,74 @@ h3.section-title {
 }
 
 /*==================================================
+=               Страница Partners
+==================================================*/
+.partners-banner {
+  background: #5ca1ac; /* Для старых браузеров */
+  background: linear-gradient(to right, #688dc7, #5da0ae, #6ab588, #99c55c, #b8d253);
+}
+
+.partners-item {
+  position: relative;
+  margin-bottom: 50px;
+  padding: 20px;
+  padding-bottom: 50px;
+  border: 2px solid #fff;
+}
+
+.partners-title {
+  margin-bottom: 20px;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.partners-item .btn {
+  position: absolute;
+  bottom: -25px;
+  padding: 15px 30px;
+  transform: translateX(-50%);
+  transition-duration: 0.3s;
+  border: 2px solid #fff;
+}
+
+.partners-item .btn:hover {
+  background-color: #688ec5;
+  color: #fff;
+}
+
+.partners-list .col-xs-12:nth-child(2) .btn {
+  color: #6ab588;
+}
+
+.partners-list .col-xs-12:nth-child(2) .btn:hover {
+  color: #fff;
+  background-color: #6ab588;
+}
+
+.partners-list .col-xs-12:last-child .btn {
+  color: #9cc55b;
+}
+
+.partners-list .col-xs-12:last-child .btn:hover {
+  color: #fff;
+  background-color: #9cc55b;
+}
+
+.partners-content {
+  padding-bottom: 50px;
+}
+
+.partners-content {
+  padding-bottom: 50px;
+  color: #484848;
+}
+
+.partners-form .section-title {
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+/*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
 
@@ -939,6 +1007,11 @@ h3.section-title {
   .network-location .features-title { min-height: 70px; }
 
   .network-location .features-desc { min-height: 220px; }
+
+  .partners-form .section-title {
+    margin-bottom: 30px;
+    font-size: 35px;
+  }
 
 }
 
@@ -1050,6 +1123,8 @@ h3.section-title {
   .person-photo { margin-bottom: 15px; }
 
   .person-name { font-size: 16px; }
+
+  .partners-form .section-title { font-size: 28px; }
 
 }
 
@@ -1184,6 +1259,13 @@ h3.section-title {
   .persons { margin-top: 35px; }
 
   .person-name { margin-bottom: 5px; }
+
+  .partners-content { padding-bottom: 30px; }
+
+  .partners-form .section-title {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
 
 }
 
