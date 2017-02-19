@@ -1069,6 +1069,18 @@ h3.section-title {
 }
 
 /*==================================================
+=               Страница Questions
+==================================================*/
+.qa-btns {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.qa-btns .btn {
+  margin-right: 15px;
+}
+
+/*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
 
@@ -1400,6 +1412,12 @@ h3.section-title {
   .panel-title { font-size: 18px; }
 
   .panel-body { padding: 20px 30px; }
+
+  .qa-btns .btn {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+  }
 
 }
 
