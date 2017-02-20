@@ -23,6 +23,16 @@ form .btn {
   margin-top: 10px;
 }
 
+select:not([multiple]) {
+  line-height: 1.3333333;
+  background-position: right 50%;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-down.svg);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
 .icon {
   display: inline-block;
   background: url(../img/sprites.png) no-repeat;
@@ -1081,6 +1091,33 @@ h3.section-title {
 }
 
 /*==================================================
+=               Страница Contacts
+==================================================*/
+.contacts-page {
+  padding-top: 75px;
+}
+
+.contacts-page select {
+  font-weight: 700;
+  color: #484848;
+}
+
+.contacts-page h3 {
+  margin-top: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #484848;
+}
+
+.contacts-page strong {
+  color: #484848;
+}
+
+.contacts-page p {
+  margin-bottom: 30px;
+}
+
+/*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
 
@@ -1254,6 +1291,8 @@ h3.section-title {
 
   .panel-title { font-size: 20px; }
 
+  .contacts-page p { margin-bottom: 15px; }
+
 }
 
 /* Small Devices, Tablets */
@@ -1418,6 +1457,10 @@ h3.section-title {
     margin: 0;
     margin-bottom: 10px;
   }
+
+  .contacts-page { padding-top: 40px; }
+
+  .contacts-page form { margin-bottom: 30px; }
 
 }
 
