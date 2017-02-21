@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CUBE | Dashboard</title>
+    <title>CUBE | Applications</title>
     
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -61,10 +61,10 @@
           <div class="sidebar">
             <ul class="sidebar-nav">
               <li>
-                <a class="active" href="dashboard.html"><i class="icon icon-dashboard"></i>Dashboard</a>
+                <a href="dashboard.html"><i class="icon icon-dashboard"></i>Dashboard</a>
               </li>
               <li>
-                <a href="dashboard-app.html"><i class="icon icon-applications"></i>Applications</a>
+                <a class="active" href="dashboard-app.html"><i class="icon icon-applications"></i>Applications</a>
               </li>
               <li>
                 <a href="dashboard-report.html"><i class="icon icon-transactions"></i>Transactions Report</a>
@@ -79,67 +79,54 @@
             <button type="button" class="btn-link sidebar-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
             <div class="dash-content">
               <h1 class="page-title">
-                <i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard
+                <i class="fa fa-th-large" aria-hidden="true"></i>Applications
+                <a href="#" class="btn btn-success">Add New Apps</a>
               </h1>
               <div class="dash-content-wrapper">
-                <form class="chart-filter-top form-inline">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="inputApplications" placeholder="Applications (All)">
+                <div class="app-top row">
+                  <div class="col-xs-6 col-sm-3">
+                    <input type="search" class="app-search form-control" placeholder="Search">
                   </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="inputCountries" placeholder="Countries (All)">
+                  <div class="col-xs-6 col-sm-4 pull-right text-right">
+                    <div class="app-btns">
+                      <button class="btn-link" type="button"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
+                      <button class="btn-link" type="button"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                      <button class="btn-link" type="button"><i class="glyphicon glyphicon-th" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                      <button class="btn-link" type="button"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="inputWidget" placeholder="Widget Types (All)">
+                </div>
+                <div class="app-botom">
+                  <div class="table-responsive">
+                    <table class="table table-hover table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Name<button type="button" class="btn-sort btn-link"><i class="fa fa-angle-up" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></button></th>
+                          <th>Platform<button type="button" class="btn-sort btn-link"><i class="fa fa-angle-up" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></button></th>
+                          <th class="hidden-xs">Application ID</th>
+                          <th class="hidden-xs">Created</th>
+                          <th class="hidden-xs">Family</th>
+                          <th class="hidden-xs">Show</th>
+                          <th class="hidden-xs">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="active">
+                          <td colspan="7">No matching records found</td>
+                        </tr>
+                        <tr>
+                          <td colspan="7">No matching records found</td>
+                        </tr>
+                        <tr>
+                          <td colspan="7">No matching records found</td>
+                        </tr>
+                        <tr>
+                          <td colspan="7">No matching records found</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="inputDate" placeholder="28 Jan 2017 - 03 Feb 2017">
-                  </div>
-                  <button type="submit" class="btn btn-success">Apply</button>
-                </form>
-                <form class="chart-filter form-inline">
-                  <div class="form-group">
-                    <label class="label-primary" for="renevue">
-                      $0.00<br> 
-                      <span>Renevue</span>
-                      <input type="checkbox" id="renevue" value="renevue" checked>
-                      <span class="checkbox-indicator indicator"></span>
-                    </label>
-                  </div>
-                  <div class="form-group">
-                    <label class="label-epcm" for="epcm">
-                      $0.00<br> 
-                      <span>EPCM</span>
-                      <input type="checkbox" id="epcm" value="EPCM">
-                      <span class="checkbox-indicator indicator"></span>
-                    </label>
-                  </div>
-                  <div class="form-group">
-                    <label class="label-impressions" for="impressions">
-                      0<br> 
-                      <span>Impressions</span>
-                      <input type="checkbox" id="impressions" value="Impressions">
-                      <span class="checkbox-indicator indicator"></span>
-                    </label>
-                  </div>
-                  <div class="form-group">
-                    <label class="label-cliks" for="cliks">
-                      0<br> 
-                      <span>Cliks</span>
-                      <input type="checkbox" id="cliks" value="Cliks">
-                      <span class="checkbox-indicator indicator"></span>
-                    </label>
-                  </div>
-                  <div class="form-group">
-                    <label class="label-success" for="ctr">
-                      0<br> 
-                      <span>CTR</span>
-                      <input type="checkbox" id="ctr" value="CTR">
-                      <span class="checkbox-indicator indicator"></span>
-                    </label>
-                  </div>
-                </form>
-                <img src="img/dashboard/chart.png" width="928" height="238" alt="">
+                </div>
               </div>
             </div>
           </div>
